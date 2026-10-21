@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Docstring</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #E6E6FA; }
+    h1 { color: #333; }
+    pre {
+      background: #fff;
+      border: 1px solid #E89A63;
+      border-radius: 6px;
+      padding: 16px;
+      overflow-x: auto;
+    }
+    code { font-family: Consolas, monospace; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>set_user_setting</h1>
+  <pre><code>from typing import Any
+
+
+def set_user_setting(user_id: str, key: str, value: Any) -&gt; bool:
+    """Sets a single setting for a user.
+
+    Args:
+        user_id (str): Unique ID of the user.
+        key (str): Name of the setting, e.g. "theme".
+        value (Any): New value for the setting.
+
+    Returns:
+        bool: True if the setting was saved, False otherwise.
+
+    Raises:
+        KeyError: If `key` is not a valid setting name.
+        ValueError: If `value` is not valid for the given `key`.
+
+    Example:
+        &gt;&gt;&gt; set_user_setting("u123", "theme", "dark")
+        True
+    """
+    ...</code></pre>
+</body>
+</html>
